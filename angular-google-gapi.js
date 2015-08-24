@@ -120,6 +120,7 @@ angular.module('angular-google-gapi').factory('GAuth', ['$rootScope', '$q', 'GCl
         }
 
         function offline() {
+            console.log('----- testing if these bowrifications come trough or no ------');        
             var deferred = $q.defer();
             var origin = $location.protocol + "//" + $location.hostname;
             if($location.port != "") {
